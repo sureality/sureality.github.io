@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sureality</title>
+<style>
+.lang {
+    display: none;
+}
+#lang-de .de,#lang-en .en {
+    display: block;
+}
+body {
+  margin:0;
+}
+.content {
+  margin:8px 10em;
+}
+nav {
+  padding:0.3em;
+  text-align:right;
+  color:white;
+  background:navy;
+}
+a[onclick] {
+  cursor:pointer;
+}
+nav a {
+  padding:1em;
+}
+nav a img {
+  height:1em;
+}
+blockquote {
+  font-style:italic;
+  width:80%;
+  align:center;
+  padding:0.3em;
+  box-shadow:0 0 6px rgba(0,0,0,0.5);
+}
+blockquote::before {
+  display:block;
+  height:0;
+  content:'“';
+  margin-left:-0.8em;
+  font:italic 400%/1 Georgia, serif;
+  color: #999;
+}
+blockquote div {
+  font-style:normal;
+  text-align:right;
+}
+</style>
+<script>
+function setLanguage(lang) {
+  if (['en', 'de'].indexOf(lang) >= 0) {
+    document.body.id = 'lang-' + lang;
+  }
+}
+function switchLanguage(lang) {
+  setLanguage(lang);
+  window.location.hash = '#' + lang;
+}
+function getHash() {
+  if (window.location.hash) {
+    return window.location.hash.substring(1);
+  }
+  return null;
+}
+</script>
+</head>
+<body id="lang-en">
+<script>
+window.onhashchange = function () {
+  setLanguage(getHash());
+}
+var language = getHash() || window.navigator.userLanguage || window.navigator.language;
+if(language.indexOf('de') !== -1) {
+  document.body.id='lang-de';
+}
+</script>
+<nav>
+<a onClick="switchLanguage('en')"><img alt="english" src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg"/></a>
+<a onClick="switchLanguage('de')"><img alt="deutsch" src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg"/></a>
+</nav>
+<div class="content">
+<h1 class="lang en">Conspiracy or Truth?</h1>
+<h1 class="lang de">Verschwörung oder Wahrheit?</h1>
+<blockquote class="lang en">You can fool some of the people all of the time, and all of the people some of the time, but you can not fool all of the people all of the time.<div>[Abraham Lincoln]</div></blockquote>
+<blockquote class="lang de">Man kann alle Menschen für einige Zeit belügen.	Einige Menschen kann man auch für alle Zeit belügen. Aber man kann nicht alle Menschen für alle Zeit belügen.<div>[Abraham Lincoln]</div></blockquote>
+<div class="lang en">Did you ever ask yourself such questions?
+<ul>
+<li><a href="https://github.com/sureality/en/wiki/Money">What is money and how does it work?</a></li>
+<!--<li><a href="https://github.com/sureality/en/wiki/Worldorder">If money rules the world, who controlls the money and the world?</a></li>-->
+<li><a href="https://github.com/sureality/en/wiki/War">Why is there permanently war on earth?</a></li>
+<li><a href="https://github.com/sureality/en/wiki/Terrorism">Where does all this terror come from?</a></li>
+<li><a href="https://github.com/sureality/en/wiki/Politics">How sovereign are our democratic elected politicians?</a></li>
+<li><a href="https://github.com/sureality/en/wiki/Media">How free are our media?</a></li>
+<li><a href="https://github.com/sureality/en/wiki/HumanRights">Do we really care about human rights?</a></li>
+<li><a href="https://github.com/sureality/en/wiki/Spying">Are we all victims of spying?</a></li>
+<!--
+<li><a href="https://github.com/sureality/en/wiki/Environment">Why do we ruin our wonderful and unique planet?</a></li>
+<li><a href="https://github.com/sureality/en/wiki/Consumption">Which influence do we have with our consumption?</a></li>
+-->
+</ul>
+Such important questions are discussed too raely. Unfortunately it is very difficult to to investigate the truth and get an objective view between conspiracy and mainsteam-media.
+Fact is that our western worldview is anything but objective.<br>
+<br>
+You can only find the truth yourself by critical research. We can help you and offer many entry points.<br>
+<br>
+Simply click on the questions of your main interest and start your journey into the <a href="https://github.com/sureality/en/wiki">reality</a>.
+</div>
+<div class="lang de">Hast Du Dir schon mal solche Fragen gestellt?
+<ul>
+<li><a href="https://github.com/sureality/de/wiki/Geld">Was ist eigentlich Geld und wie funktioniert es?</a></li>
+<li><a href="https://github.com/sureality/de/wiki/Weltregierung">Wenn Geld die Welt regiert, wer kontrolliert das Geld und die Welt?</a></li>
+<li><a href="https://github.com/sureality/de/wiki/Kriege">Warum gibt es permanent Kriege auf der Erde?</a></li>
+<li><a href="https://github.com/sureality/de/wiki/Terrorismus">Woher kommt dieser ganze Terrorismus?</a></li>
+<li><a href="https://github.com/sureality/de/wiki/Politik">Wie souverän sind demokratisch gewählte Politiker?</a></li>
+<li><a href="https://github.com/sureality/de/wiki/Medien">Wie steht es um die Pressefreiheit? Wie frei sind unsere Medien?</a></li>
+<li><a href="https://github.com/sureality/de/wiki/Menschenrechte">Wie steht es um die Menschenrechte?</a></li>
+<li><a href="https://github.com/sureality/de/wiki/Spionage">Sind wir alle Opfer von Spionage?</a></li>
+<li><a href="https://github.com/sureality/de/wiki/Umwelt">Warum zerstören wir unseren wundervollen und einzigartigen Planeten?</a></li>
+<li><a href="https://github.com/sureality/de/wiki/Konsum">Welchen Einfluss hat unser Konsum?</a></li>
+</ul>
+Solche wichtigen Fragen werden viel zu selten behandelt. Es ist leider sehr schwer zwischen Verschwörungsideologien und Mainstream-Medien eine objektivere Sicht zu gewinnen und der Wahrheit auf den Grund zu kommen.
+Fakt ist, dass unser westliches Weltbild alles andere als objektiv ist.<br>
+<br>
+Die Wahrheit kannst Du nur selber durch kritische Recherche herausfinden. Wir können Dir dabei helfen und geben Dir viele Einstiegspunkte.<br>
+<br>
+Klicke dazu einfach auf die Fragen, die Dich am meisten Interessieren und starte Deine Reise in die <a href="https://github.com/sureality/de/wiki">Wirklichkeit</a>.
+</div>
+<blockquote class="lang en">Men occasionally stumble over the truth, but most of them pick themselves up and hurry off as if nothing ever happened.<div>[Winston Churchill]</div></blockquote>
+<blockquote class="lang de">Gelegentlich stolpern die Menschen über die Wahrheit, aber sie richten sich auf und gehen weiter, als sei nichts geschehen.<div>[Winston Churchill]</div></blockquote>
+<blockquote class="lang en">It is error alone which needs the support of government. Truth can stand by itself.<div>[Thomas Jefferson]</div></blockquote>
+<blockquote class="lang de">Nur die Lüge braucht die Stütze der Staatsgewalt, die Wahrheit steht von alleine aufrecht.<div>[Thomas Jefferson]</div></blockquote>
+</div>
+</p>
+</body>
+</html>
